@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qRPK0lxELlm1MyysrYzMERu0b9/4uf6ZKO6RT5d+XbxIiQy/T2QDh/uDBaHOITbZ76OrdcyTBxXRWglQ2BIl7Q==",
+  "dgSpecHash": "QSWVybP7/U0/qNPA39wrpOe4qazHCd8icZjt7GBHkjANNwzj8tpPy4vjrKy8YhUQFueUeS/s7gOHV3+GRs+EmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\James Tuazon\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\FMOD1\\FMOD1.csproj",
+  "projectFilePath": "C:\\Users\\James Tuazon\\Desktop\\temp\\tmod1\\FMOD1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\James Tuazon\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
   ],
