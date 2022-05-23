@@ -14,7 +14,7 @@ namespace FMOD1.Content.Items.Weapons
 
         public override void SetDefaults()
         {   
-            //Hitbox test comment
+            //Hitbox
             Item.width = 26;
             Item.height = 32;
             
