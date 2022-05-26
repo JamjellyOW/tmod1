@@ -18,8 +18,8 @@ namespace FMOD1.Content.Items.Weapons
         public override void SetDefaults()
         {   
             //Hitbox
-            Item.width = 26;
-            Item.height = 32;
+            Item.width = 86;
+            Item.height = 72;
             
             //Use and Animation Style
             Item.useTime = 24;
@@ -31,7 +31,7 @@ namespace FMOD1.Content.Items.Weapons
             Item.DamageType = DamageClass.Magic;
             Item.damage = 25;
             Item.knockBack = 3;
-            Item.crit = 2;
+            Item.crit = 4;
             
             //Misc
             Item.value = Item.buyPrice(silver: 80, copper: 50);
@@ -42,15 +42,17 @@ namespace FMOD1.Content.Items.Weapons
             Item.noMelee = true;
             
             //Sound
-            Item.UseSound = SoundID.Item8;
+            Item.UseSound = SoundID.Item43;
+
         }
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            Vector2 offset = new Vector2();
-            position += offset;
-            return true;
+        Vector2 offset = new Vector2(velocity.X * 7, velocity.Y * 7);
+        position += offset;
+        return true;
         }
+
 
         public override void AddRecipes()
         {
