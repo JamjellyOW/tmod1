@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\James Tuazon\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\FMOD1\\FMOD1.csproj": {}
+    "C:\\Users\\Dexter\\Documents\\GitHub\\tmod1\\FMOD1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\James Tuazon\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\FMOD1\\FMOD1.csproj": {
+    "C:\\Users\\Dexter\\Documents\\GitHub\\tmod1\\FMOD1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\James Tuazon\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\FMOD1\\FMOD1.csproj",
+        "projectUniqueName": "C:\\Users\\Dexter\\Documents\\GitHub\\tmod1\\FMOD1.csproj",
         "projectName": "FMOD1",
-        "projectPath": "C:\\Users\\James Tuazon\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\FMOD1\\FMOD1.csproj",
-        "packagesPath": "C:\\Users\\James Tuazon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\James Tuazon\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\FMOD1\\obj\\",
+        "projectPath": "C:\\Users\\Dexter\\Documents\\GitHub\\tmod1\\FMOD1.csproj",
+        "packagesPath": "C:\\Users\\Dexter\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dexter\\Documents\\GitHub\\tmod1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\James Tuazon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dexter\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
