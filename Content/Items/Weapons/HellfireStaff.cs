@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using FMOD1.Content.Projectiles;
 
 namespace FMOD1.Content.Items.Weapons
 {
@@ -37,7 +38,7 @@ namespace FMOD1.Content.Items.Weapons
             Item.value = Item.buyPrice(silver: 80, copper: 50);
             Item.rare = ItemRarityID.Blue;
             Item.mana = 10;
-            Item.shoot = ProjectileID.CursedFlameFriendly;
+            Item.shoot = ModContent.ProjectileType<FlamePro>();
             Item.shootSpeed = 10f;
             Item.noMelee = true;
             
@@ -48,11 +49,8 @@ namespace FMOD1.Content.Items.Weapons
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-        Vector2 offset = new Vector2(velocity.X * 7, velocity.Y * 7);
-        position += offset;
-        return true;
+            return base.Shoot(player, source, position, velocity, type, damage, knockback);
         }
-
 
         public override void AddRecipes()
         {
