@@ -2,6 +2,8 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using FMOD1.Content.Projectiles;
+using Terraria.DataStructures;
 
 namespace FMOD1.Content.Items.Weapons
 {
@@ -16,8 +18,8 @@ namespace FMOD1.Content.Items.Weapons
         public override void SetDefaults()
         {   
             //Hitbox
-            Item.width = 26;
-            Item.height = 32;
+            Item.width = 64;
+            Item.height = 89;
             
             //Use and Animation Style
             Item.useTime = 15;
@@ -34,9 +36,12 @@ namespace FMOD1.Content.Items.Weapons
             //Misc
             Item.value = Item.buyPrice(silver: 80, copper: 50);
             Item.rare = ItemRarityID.Blue;
+            //Item.shoot = ModContent.ProjectileType<Lavaspurt>();
             Item.shoot = ProjectileID.WoodenArrowFriendly;
-            Item.useAmmo = AmmoID.Arrow;
             Item.shootSpeed = 12f;
+            Item.noMelee = true;
+            Item.useAmmo = AmmoID.Arrow;
+            
             
             //Sound
             Item.UseSound = SoundID.Item5;
@@ -48,7 +53,16 @@ namespace FMOD1.Content.Items.Weapons
             return offset;
         }
 
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        {
+            if (type == ProjectileID.WoodenArrowFriendly)
+            { 
+                type = ModContent.ProjectileType<Lavaspurt>();
+            }
 
+            return true;
+        }
+        
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

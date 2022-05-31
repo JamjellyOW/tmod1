@@ -52,6 +52,7 @@ namespace FMOD1.Content.Items.Weapons
             return base.Shoot(player, source, position, velocity, type, damage, knockback);
         }
 
+
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
