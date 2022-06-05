@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using FMOD1.Content.Projectiles;
+using FMOD1.Content.Projectiles.Minions;
 
 namespace FMOD1.Content.Items.Weapons
 {
