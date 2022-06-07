@@ -4,7 +4,6 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using FMOD1.Content.Projectiles;
-using FMOD1.Content.Projectiles.Minions;
 
 namespace FMOD1.Content.Items.Weapons
 {
@@ -12,29 +11,29 @@ namespace FMOD1.Content.Items.Weapons
     {
         public override void SetStaticDefaults()
         {
-             DisplayName.SetDefault("Hellfire Staff"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+            DisplayName.SetDefault("Hellfire Staff"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
             Tooltip.SetDefault("Inflicts those unsuspecting with fire!");
             Item.staff[Item.type] = true;
         }
 
         public override void SetDefaults()
-        {   
+        {
             //Hitbox
             Item.width = 86;
             Item.height = 72;
-            
+
             //Use and Animation Style
             Item.useTime = 24;
             Item.useAnimation = 24;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.autoReuse = true;
-            
+
             // Damage Values
             Item.DamageType = DamageClass.Magic;
             Item.damage = 25;
             Item.knockBack = 3;
             Item.crit = 4;
-            
+
             //Misc
             Item.value = Item.buyPrice(silver: 80, copper: 50);
             Item.rare = ItemRarityID.Blue;
@@ -42,7 +41,7 @@ namespace FMOD1.Content.Items.Weapons
             Item.shoot = ModContent.ProjectileType<FlamePro>();
             Item.shootSpeed = 10f;
             Item.noMelee = true;
-            
+
             //Sound
             Item.UseSound = SoundID.Item43;
 
